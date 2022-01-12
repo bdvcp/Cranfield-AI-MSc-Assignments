@@ -5,9 +5,9 @@ import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 
 '''################ LOAD DATA ####################'''
-dataAirports = pd.read_csv("Cleaned_Airports_Data.csv",encoding="unicode_escape")#
+dataAirports = pd.read_csv("Cleaned_Airports_Data2.csv",encoding="unicode_escape")#
 dataAirports = dataAirports.set_index("id")#
-FlightsData = pd.read_csv("Cleaned_Flights_Data.csv")
+FlightsData = pd.read_csv("Cleaned_Flights_Data3.csv")
 Flights_us = FlightsData[(FlightsData.Target_Country == "USA")#
                           & (FlightsData.Source_Country == "USA")#
                           & (FlightsData.TimeSeries == 200307)]
